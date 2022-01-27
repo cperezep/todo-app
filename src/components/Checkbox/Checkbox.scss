@@ -1,27 +1,42 @@
+@import 'src/styles/responsive-breakpoints';
+@import 'src/styles/to-rem';
+
 .checkbox {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  width: 400px;
-  margin: 0 auto 5px;
+  width: toRem(250px);
+  margin: 0 auto toRem(10px);
   background-color: #f3f3f3;
+  padding: toRem(5px);
+
+  @include respond(phone) {
+    width: toRem(350px);
+  }
+
+  @include respond(tablet-portrait) {
+    width: toRem(500px);
+  }
 
   &__content {
-    border-radius: 4px;
+    border-radius: toRem(4px);
     display: flex;
     align-items: center;
     flex-wrap: nowrap;
-    padding: 5px 10px 5px 5px;
+    padding: toRem(5px) toRem(10px) toRem(5px) toRem(5px);
 
     input {
-      margin-right: 5px;
+      margin-right: toRem(5px);
       cursor: pointer;
     }
   }
 
   &__date {
-    border: 1px solid black;
-    padding: 5px;
+    display: flex;
+    justify-content: center;
+    width: toRem(90px);
+    border: toRem(1px) solid black;
+    padding: toRem(5px);
   }
 
   &__checked {

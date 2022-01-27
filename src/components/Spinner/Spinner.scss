@@ -1,16 +1,18 @@
+@import 'src/styles/to-rem';
+
 .lds-dual-ring {
   display: inline-block;
-  width: 80px;
-  height: 80px;
+  width: toRem(80px);
+  height: toRem(80px);
 
   &::after {
     content: ' ';
     display: block;
-    width: 64px;
-    height: 64px;
-    margin: 8px;
+    width: toRem(64px);
+    height: toRem(64px);
+    margin: toRem(8px);
     border-radius: 50%;
-    border: 6px solid #000;
+    border: toRem(6px) solid #000;
     border-color: #000 transparent #000 transparent;
     animation: lds-dual-ring 1.2s linear infinite;
   }

@@ -1,6 +1,8 @@
+@import 'src/styles/to-rem';
+
 .navbar {
   background-color: #383e54;
-  height: 30px;
+  height: toRem(30px);
   display: flex;
   justify-content: flex-start;
   align-items: center;
