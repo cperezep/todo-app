@@ -1,12 +1,12 @@
 # Todo App
 
-Build with React ⚛️
+ToDo App built with React using TypeScript, Hooks, Context API, reducer, custom hook, error boundary, testing-library, MSW and SASS.
 
 ### Pre-commit checks
 
 Pre-commit run format and linting scripts, allowing each commit to be as clean as possible.
 
-## Available Scripts
+## Running the app
 
 In the project directory, you can run:
 
@@ -15,14 +15,17 @@ In the project directory, you can run:
 Runs the app in the development mode.\
 Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
 
+## Running the tests
+
 ### `npm test`
 
-Launches the test runner in the interactive watch mode.
+This will start Jest in watch mode.
+
+## Other Scripts
 
 ### `npm run build`
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+Builds the app for production to the `build` folder.
 
 ### `npm run lint`
 

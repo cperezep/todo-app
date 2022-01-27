@@ -33,6 +33,8 @@ function useTodo() {
   return context;
 }
 
+// Got this idea from Dan:
+// https://twitter.com/dan_abramov/status/1125773153584676864
 async function getTodos(dispatch: React.Dispatch<TodoAction>) {
   dispatch({ type: 'PENDING' });
   try {
