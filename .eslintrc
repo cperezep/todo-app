@@ -1,0 +1,33 @@
+{
+  "env": {
+    "browser": true,
+    "es2021": true
+  },
+  "extends": ["eslint:recommended", "plugin:react/recommended", "plugin:@typescript-eslint/recommended"],
+  "parser": "@typescript-eslint/parser",
+  "parserOptions": {
+    "ecmaFeatures": {
+      "jsx": true
+    },
+    "ecmaVersion": "latest",
+    "sourceType": "module"
+  },
+  "plugins": ["react", "@typescript-eslint"],
+  "rules": {
+    "no-tabs": ["error", {"allowIndentationTabs": true}],
+    "indent": ["error", 2, {"SwitchCase": 1}],
+    "react/jsx-filename-extension": "off",
+    "no-console": "warn",
+    "object-curly-newline": "off",
+    "react/display-name": "off",
+    "max-len": [
+      "error",
+      {
+        "code": 180,
+        "tabWidth": 2,
+        "ignoreUrls": true
+      }
+    ],
+    "@typescript-eslint/indent": "off" // We use eslint indent rules instead
+  }
+}

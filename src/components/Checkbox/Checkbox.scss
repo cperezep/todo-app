@@ -1,0 +1,38 @@
+.checkbox {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 400px;
+  margin: 0 auto 5px;
+  background-color: #f3f3f3;
+
+  &__content {
+    border-radius: 4px;
+    display: flex;
+    align-items: center;
+    flex-wrap: nowrap;
+    padding: 5px 10px 5px 5px;
+
+    input {
+      margin-right: 5px;
+      cursor: pointer;
+    }
+  }
+
+  &__date {
+    border: 1px solid black;
+    padding: 5px;
+  }
+
+  &__checked {
+    text-decoration: line-through;
+  }
+}
+
+.checked {
+  background-color: #ccffcc;
+}
+
+.overdue {
+  background-color: #ffcccc;
+}
