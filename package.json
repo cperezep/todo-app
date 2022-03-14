@@ -29,7 +29,8 @@
     "test": "react-scripts test",
     "lint": "eslint --color --ignore-path .eslintignore --ext .ts,.tsx .",
     "format:check": "prettier --ignore-path .gitignore --check \"**/*.+(html|css|sass|scss|js|jsx|ts|tsx|json)\"",
-    "format:fix": "prettier --ignore-path .gitignore --write \"**/*.+(html|css|sass|scss|js|jsx|ts|tsx|json)\""
+    "format:fix": "prettier --ignore-path .gitignore --write \"**/*.+(html|css|sass|scss|js|jsx|ts|tsx|json)\"",
+    "configure-husky": "npx husky install && npx husky add .husky/pre-commit \"npx --no-install lint-staged\""
   },
   "eslintConfig": {
     "extends": [
@@ -57,6 +58,11 @@
     "husky": "^7.0.4",
     "lint-staged": "^12.3.2",
     "prettier": "^2.5.1"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged"
+    }
   },
   "lint-staged": {
     "src/*.{ts,tsx}": [
